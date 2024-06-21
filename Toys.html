@@ -1,0 +1,1011 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+ /*STYLE FOR TOYS PAGE BODY*/
+.toysbody{
+	background-image:url("./Images/sky7.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% ;
+	margin-top:0px;
+			}
+/*STYLE FOR HEADER */
+.header{
+	position:fixed;
+	margin-top: -150px;
+	width:100%;
+	height: 150px;
+	background-image: url("./Images/b12.webp");
+	z-index: 10;	
+			}
+ /*STYLE FOR LOGO */			
+.logopicc{
+	background-color:#b2ffff;
+	height:100px;
+	width:100px;
+	margin-left:20px;
+	border-radius:70px;
+	margin-top:-100px;
+	 
+    }
+
+.logopic{
+	height:100px;
+	width:100px;
+	display:inline-block;
+	border:none;
+}
+
+/*STYLE FOR NAVIGATION BUTTON*/
+.navbutton{       
+	display:inline-block;
+	width:400px;
+	height:40px;
+	margin-left:1000px;
+	margin-top:50px;
+	margin-bottom:25px;
+	}
+
+.nbtn{
+     margin-right:2px;
+	 padding:5px;
+	 width:70px;
+	 border-radius:30px;
+	 position:relative;
+	 text-align:center;
+	 font-family:poppins;
+	 font-weight:800;
+	 color:#008080;
+	 cursor:pointer;
+	 transition:0.5s;
+	 }
+	 
+/*STYLE FOR BUTTON HOVER*/
+.nbtn:hover{
+	background-color: #008080;
+	color:#000;
+	box-shadow:0 0 50px #0f0f0f,0 0 21px 0 #080808;
+	}
+
+/*STYLE FOR HEADING AND PARAGRAPH*/	
+h1,p{
+
+	margin-top:-50px;
+	text-align: center;
+	margin-bottom:-100px;
+	margin-left: -100px;
+	}
+
+/*STYLE FOR HEADER PARAGRAPH*/
+p{
+
+    margin-top:100px;}
+
+/*STYLE FOR HORIZONTAL LINE*/	
+hr{
+	margin-top:20px;
+	position: fixed;
+	margin-bottom: 100px;	
+}
+
+/*STYLE FOR HEADING 3*/
+ h3{
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+	padding-top: 10px;
+ }
+
+ /*STYLE FOR TOYS GALLERY DIV*/ 	
+.Toysgallery{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   margin-top:150px;
+}
+ /*STYLE FOR CONTENT*/ 
+.content{
+	width: 20%;
+	margin: 15px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	padding-top: 10px;
+	box-shadow:0 0 50px #008080,0 0 21px 0 #008080;
+	transition:1s ;
+}
+
+
+ /*STYLE FOR CONTENT-HOVER*/ 
+.content:hover{
+	box-shadow: 0 3px 6px #008080,0 0 21px 0 #008080; 
+	transform: translate(0px,-8px );
+}
+
+ /*STYLE FOR IMAGE*/ 
+img{
+    width:200px;
+	height: 200px;
+	text-align: center;
+	margin: 0px auto;
+	display: block;
+	border: 5px solid #008080;
+}
+
+
+ /*STYLE FOR PARAGRAPH*/ 
+p{
+    text-align: center;
+	color:black;
+	padding-top: 0 8px;
+}
+
+ /*STYLE FOR HEADER 06*/ 
+h6{
+    text-align: center;
+	color:black;
+	font-size: 14px;
+    margin-top: 0;
+}
+
+ /*STYLE FOR UNORDERED LIST*/ 
+ul{
+   list-style: none;
+   display: flex;
+   justify-content: center;   
+   align-items: center;
+   padding-top: 0px;
+}
+
+ /*STYLE FOR LIST ITEMS*/
+li{
+	padding-top: 5px;
+}
+
+ /*STYLE FOR ICONS*/
+.fa{
+	font-size: 26px;
+	transition: .4s;
+	margin: 3px;
+
+}
+.checked{
+	color: gold;
+}
+.fa:hover{
+	transform: scale(0.6);
+	transition:-3s;
+}
+ /*STYLE FOR BUY BUTTON*/
+ .buy{
+
+	text-align: center;
+	font-size: 24px;
+	color:black;
+	width: 70%;
+	padding: 15px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 80px;
+	background-color: #008080;
+}
+ /*STYLE FOR BUY BUTTON HOVER*/
+.buy:hover {
+  background-color: black;
+  color:#008080 ;
+}
+ /*STYLE FOR ICONS*/
+.icons{
+    margin-left:600px;
+padding:20px;
+}
+.icons .fa-brands{
+padding:20px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+			body {
+				font-size: 14px;
+			}
+			/* Additional responsive styles for smaller screens */
+		}
+
+		/* Media query for screens with a minimum width of 1200px */
+		@media (min-width: 1200px) {
+			body {
+				font-size: 18px;
+			}
+			/* Additional responsive styles for larger screens */
+		}
+		
+</style>
+</head>
+<!--BEGIN TOYPAGE BODY-->
+	<body class="Toysbody">
+       
+		<!--BEGIN HEADER-->
+		<div class="header">
+	        <!--BEGIN NAVIGATION BUTTON-->
+			<div class = "navbutton">
+				 <a  href = "./00048.html"><button class = "nbtn" id = "Home"> Home</button></a>
+				 <a href = "./Products.html"><button class = "nbtn" id = "Products"> Products</button></a>
+				 <a href = "./Toys.html"><button class = "nbtn" id = "Toys"> Toys</button></a>
+				 <a href = "./About.html"><button  class = "nbtn" id = "About"> About Us</button></a>
+				 <a href = "./Award.html"><button  class = "nbtn" id = "Award"> Awards</button></a>
+			 
+			</div>
+			<!--BEGIN LOGO-->
+			<div class="logopicc">
+			<img class="logopic" src="./Images/logo.png">
+			<!--END LOGO-->
+			</div>
+		<!--END HEADER-->	
+		</div>
+		<hr>
+
+		
+		<!--BEGIN  TOYS GALLERY-->
+  <div class="Toysgallery">
+	<div  class = "content">
+	<img  src="./Images/t1.jpg">
+	<h3>BARBIE Dolls</h3>
+	<h6>$3</h6>
+	<ul>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+	</ul>
+	<button class="Buy">Buy</button>
+	</div>
+
+   <div  class = "content">
+	<img  src="./Images/t2.jpg">
+	<h3>ELIZABETH Dolls</h3>
+	<h6>$4.4</h6>
+	<ul>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+	</ul>
+	<button class="Buy">Buy</button>
+	</div>
+
+ 
+	<div  class = "content">
+		<img  src="./Images/t3.jpg">
+		<h3>ANGIE Dolls</h3>
+		<h6>$3.50</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+			</div>
+	<div  class = "content">
+		<img  src="./Images/t4.jpg">
+		<h3> EDEN Dolls</h3>
+		
+		<h6>$6.3</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t5.jpg">
+		<h3>KITCHEN TOY</h3>
+		
+		<h6>$7.0</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t6.jpg">
+		<h3>SOFT ELEPHANT</h3>
+	
+		<h6>$3.4</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+					
+					
+
+	<div  class = "content">
+		<img  src="./Images/t7.jpg">
+		<h3>LEGO HOME</h3>
+		<h6>$5.3</h6>
+			<ul>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+	<div  class = "content">
+		<img  src="./Images/t8.jpg">
+		<h3>BULIDING BLOCK</h3>
+		
+		<h6>$1.4</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t9.jpg">
+		<h3>PYRAMID RING</h3>
+	
+		<h6>$4.7</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t10.jpg">
+		<h3>TOY CAR</h3>
+	
+		<h6>$2.4</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+		
+
+	<div  class = "content">
+		<img  src="./Images/t11.jpg">
+		<h3>CLOCK</h3>
+	
+		<h6>$2.4</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t12.jpg">
+		<h3>TOYS</h3>
+		<p>Hi</p>
+		<h6>$4.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t13.jpg">
+		<h3>YO YO</h3>
+		<p>Hi</p>
+		<h6>$2.8</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+		
+	<div  class = "content">
+		<img  src="./Images/t14.jpg">
+		<h3>PUZZLE</h3>
+		<h6>$7.3</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+		
+	<div  class = "content">
+		<img  src="./Images/t15.jpg">
+		<h3>BLOCKS</h3>
+		
+		<h6>$1.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t16.jpg">
+		<h3>HALLOWEEN PUMPKINS</h3>
+	
+		<h6>$3.2</h6>
+		<ul>
+		 <li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+						
+						
+	<div  class = "content">
+		<img  src="./Images/t17.jpg">
+		<h3>TADDY</h3>
+		
+		<h6>$1.0</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t18.jpg">
+		<h3>TURTLE</h3>
+		
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t19.jpg">
+		<h3>SHAPE PUZZLE</h3>
+		
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t20.jpg">
+		<h3>CRIB</h3>
+		
+		<h6>$6.8</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+						
+
+	<div  class = "content">
+		<img  src="./Images/t21.jpg">
+		<h3>JIGSAW PUZZLE</h3>
+		<h6>$6.7</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t22.jpg">
+		<h3>BLOCKS</h3>
+		<h6>$5.3</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+
+	<div  class = "content">
+		<img  src="./Images/t23.jpg">
+		<h3>TOYS</h3>
+		<h6>$3.7</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t24.jpg">
+		<h3>PIRAMID RING</h3>
+		<h6>$5.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t25.jpg">
+		<h3>ASHA Dolls</h3>
+		<h6>$6.3</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t26.jpg">
+		<h3>Dolls</h3>
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+											
+											
+
+	<div  class = "content">
+		<img  src="./Images/t27.jpg">
+		<h3>TERESA Dolls</h3>
+		<h6>$7.3</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t28.jpg">
+		<h3>TEDDY</h3>
+		<h6>$7.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+		<div  class = "content">
+			<img  src="./Images/t29.jpg">
+			<h3>TINKERBELL Dolls</h3>
+			<h6>$6.2</h6>
+			<ul>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+			</ul>
+			<button class="Buy">Buy</button>
+			</div>
+
+	<div  class = "content">
+		<img  src="./Images/t30.jpg">
+		<h3>SOFT ELEPHANT</h3>
+		<h6>$1.8</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+			
+	<div  class = "content">
+		<img  src="./Images/t31.jpg">
+		<h3>MIRANDA Dolls</h3>
+	
+		<h6>$6.3</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+    </div>
+
+	<div  class = "content">
+		<img  src="./Images/t32.jpg">
+		<h3> NIKKI Dolls</h3>
+		
+		<h6>$6.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+
+	<div  class = "content">
+		<img  src="./Images/t33.jpg">
+		<h3>GRACE Dolls</h3>
+	
+		<h6>$3.8</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t34.jpg">
+		<h3>TINKERBELL</h3>
+		<p>Hi</p>
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t35.jpg">
+		<h3>BELL Dolls</h3>
+		<h6>$7.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t36.jpg">
+		<h3>CARLIBELL Dolls</h3>
+		<h6>$4.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+
+
+	<div  class = "content">
+		<img  src="./Images/t37.jpg">
+		<h3>SOFI </h3>
+		
+		<h6>$7.2</h6>
+			<ul>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+		</div>
+
+	<div  class = "content">
+		<img  src="./Images/t38.jpg">
+		<h3>CLARA Dolls</h3>
+		
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t39.jpg">
+		<h3>ODETTE</h3>
+		<h6>$7.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t40.jpg">
+		<h3>GIRAFFE</h3>
+		
+		<h6>$6.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t41.jpg">
+		<h3>BUBSY BEAR</h3>
+		<h6>$5.1</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button> 
+    </div>
+
+	<div  class = "content">
+		<img  src="./Images/t42.jpg">
+		<h3>COCO BEAR</h3>
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+
+	<div  class = "content">
+		<img  src="./Images/t43.jpg">
+		<h3>SOFT ELEPHANT</h3>
+		<h6>$2.1</h6>
+			<ul>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+				<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t44.jpg">
+		<h3>LIANA DOLLS</h3>
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t45.jpg">
+		<h3>ROSELLA Dolls</h3>
+		<h6>$4.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t46.jpg">
+		<h3>GIRAFFE</h3>
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+
+
+	<div  class = "content">
+		<img  src="./Images/t47.jpg">
+		<h3>DELENCY Dolls</h3>
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t48.jpg">
+		<h3>Dolls</h3>
+		
+		<h6>$5.3</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+	    </ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t49.jpg">
+		<h3>Dolls</h3>
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+
+	<div  class = "content">
+		<img  src="./Images/t50.jpg">
+		<h3>BARBIE</h3>
+		<h6>$3.2</h6>
+		<ul>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+			<li><i class="fa fa-star checked "></i></li>
+		</ul>
+		<button class="Buy">Buy</button>
+	</div>
+	<!--END TOYS GALLERY-->
+	</div>
+	
+	<!--BEGIN FOOTER-->
+	<div class="footer">
+		<div class="icons">
+			<i class="fa-brands fa-facebook fa-beat-fade"></i>
+			<i class="fa-brands fa-instagram fa-beat-fade"></i>
+			<i class="fa-brands fa-twitter fa-beat-fade"></i>
+			<i class="fa-brands fa-whatsapp fa-beat-fade"></i>
+        <!--END FOOTER -->
+		</div>
+	
+     <!--END TOYS BODY-->
+	</BODY>
+	
+	</html>

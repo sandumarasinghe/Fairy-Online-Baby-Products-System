@@ -1,0 +1,388 @@
+<html>
+<head>
+    <title>Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+/*STYLE FOR FULL PAGE*/
+* {
+    margin:0;
+    padding:0;
+    
+    }
+ /*STYLE FOR PRODUCT PAGE BODY*/	
+.ProductBody{
+    background-image:url("./Images/sky7.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% ;
+    margin-top:0px;
+    
+    }	
+/*STYLE FOR HEADER */	    
+.header{
+    position:fixed;
+    margin-top: -150px;
+    width:100%;
+    height: 150px;
+    background-image: url("./Images/b12.webp");
+    z-index: 10;}
+
+ /*STYLE FOR LOGO */	   
+.logopicc{
+    background-color:#b2ffff;
+    height:100px;
+    width:100px;
+    margin-left:20px;
+    border-radius:70px;
+    margin-top:-100px;
+    
+    
+    }
+    .logopic{
+    height:100px;
+    width:100px;
+    display:inline-block;
+    }
+/*STYLE FOR NAVIGATION BUTTON*/
+.navbutton{
+    
+    display:inline-block;
+    width:400px;
+    height:40px;
+    margin-left:1000px;
+    margin-top:50px;
+    margin-bottom:25px; 
+            }
+
+.nbtn{
+    margin-right:2px;
+    padding:5px;
+    width:70px;
+    border-radius:30px;
+    position:relative;
+    text-align:center;
+    font-family:poppins;
+    font-weight:800;
+    color:#008080;
+    cursor:pointer;
+    transition:0.5s;
+    }
+
+ /*STYLE FOR BUTTON HOVER*/
+.nbtn:hover{
+    background-color: #008080;
+    color:#000;
+    box-shadow:0 0 50px #008080,0 0 21px 0 #008080;
+    }
+
+/*STYLE FOR HEADING AND PARAGRAPH*/
+h1,p{
+    margin-top:-50px;
+    text-align: center;
+    margin-bottom:-100px;
+    margin-left: -100px;
+    }
+ 
+ /*STYLE FOR HEADER PARAGRAPH*/
+.header p{
+
+    margin-top:100px;
+   }
+
+/*STYLE FOR HORIZONTAL LINE*/
+hr{
+    margin-top:20px;
+	position: fixed;
+	margin-bottom: 100px;	
+    }
+
+ /*STYLE FOR PRODUCTS*/         
+.product {
+    margin-top: 150px;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	padding-top: 20px;
+	box-shadow:0 0 50px #61c6c6,0 0 21px 0 #008080;
+	transition:4s ;
+    height:fit-content;
+    width: 300px;
+    margin-bottom: 20px;   
+    }
+
+/*STYLE FOR DESCRIPTION*/
+.descriptions{
+    
+    margin-left: 600px;
+    max-width:600px;
+    max-height: 350px;
+    margin-top: -400px;
+    display: inline-block;
+    line-height: 2.2;
+
+}
+/*STYLE FOR DESCRIPTION PARAGRAPH*/
+.descriptions p{
+    margin-top: 10px;
+    text-align:left;
+
+}
+
+/*STYLE FOR PRODUCT IMAGE*/
+.product img {
+        max-width: 100%;
+        
+    }
+   
+.AC{
+    display:block;
+    text-align: center;
+    font-size: 14px;
+    color:black;
+    text-shadow: 2px 2px 2px #1adada;
+    font-weight:1800px;
+    width: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 30px;
+    border-radius: 80px;
+background-color: #008080;
+
+}
+
+/*STYLE FOR PRICE PARAGRAPH */
+.price p{
+
+    border:5px solid #008080;
+    border-radius: 8PX;
+    margin-left:200px;
+    margin-top:120px;
+    width:100px;
+    text-align:center;}
+    
+
+
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-top: 500px;
+}
+/*STYLE FOR ICONS*/    
+.icons{
+    margin-left:600px;
+    margin-top: 100px;
+    padding:20px;
+}
+.icons .fa-brands{
+    padding:20px;
+}
+
+    /* Media query for screens with a maximum width of 768px */
+		@media (max-width: 768px) {
+			body {
+				font-size: 14px;
+			}
+			/* Additional responsive styles for smaller screens */
+		}
+
+		/* Media query for screens with a minimum width of 1200px */
+		@media (min-width: 1200px) {
+			body {
+				font-size: 18px;
+			}
+			/* Additional responsive styles for larger screens */
+		}
+    
+    </style>
+
+    
+</head>
+<!--BEGIN PRODUCTPAGE BODY-->
+<body class = "ProductBody">
+    <!--BEGIN HEADER-->
+    <div class="header">
+	 <!--BEGIN NAVIGATION BUTTON-->
+	<div class = "navbutton">
+	     <a  href = "./00048.html"><button class = "nbtn" id = "Home"> Home</button></a>
+		 <a href = "./Products.html"><button class = "nbtn" id = "Products"> Products</button></a>
+		 <a href = "./Toys.html"><button class = "nbtn" id = "Toys"> Toys</button></a>
+		 <a href = "./About.html"><button  class = "nbtn" id = "About"> About Us</button></a>
+         <a href = "./Award.html"><button  class = "nbtn" id = "Award"> Awards</button></a>
+	</div>
+
+	<!--BEGIN LOGO-->
+	<div class="logopicc">
+	<img class="logopic" src="./Images/logo.png">
+	<!--END LOGO-->	
+    </div>
+    
+
+    <h1>Our Products</h1>
+    <p margin> Keep your baby healthy .. </p>
+    <!--END HEADER-->
+    </div>
+    
+
+    <hr>
+    <!--BEGIN MAIN CONTENT-->
+    <main>
+        <!--BEGIN PRODUCT 01 SECTION-->
+        <section class="product">
+            <img src="./Images/Shampoo.png" alt="Product 1">
+            <i class="fa-solid fa-cart-shopping fa-beat"></i>
+            <button class="AC">Add to Cart</button>
+        <!--END PRODUCT 01 SECTION-->
+        </section>
+
+         <div class="descriptions">
+            <h2>Fairy Baby Shampoo</h2>
+            <p>Baby Shampoo is as gentle to the eyes as pure water and is specially designed to gently cleanse baby’s delicate hair and scalp. It quickly lathers and rinses easily, leaving your baby’s hair soft, shiny, and clean.
+                3x tested formulation - pediatrician, dermatologist, ophthalmologist.
+                No parabens, phthalates, sulfates, dyes, or soap.
+                Our NO MORE TEARS® formula is as gentle to the eyes as pure water.
+                Gentle, hypoallergenic and pH balanced.
+            </p>
+            
+            <div class="price">
+                <p>$5.2</p> 
+            </div>   
+        </div>
+       
+        
+        <!--BEGIN PRODUCT 02 SECTION-->
+        <section class="product">
+            <img src="./Images/oil.png" alt="Product 2">
+            <i class="fa-solid fa-cart-shopping fa-beat"></i>
+            <button class="AC">Add to Cart</button>
+        <!--END PRODUCT 02 SECTION-->
+        </section>
+
+        <div class="descriptions">
+            <h2>Fairy Baby Oil</h2>
+            <p>Use Fairbaby oil during a baby massage for a bonding experience that is relaxing for both you and your little one. JOHNSON'S® baby oil locks in up to 10x more moisture on wet skin than an ordinary lotion can on dry skin, leaving you and your baby’s skin soft and smooth. ​​
+                Leaves skin smooth and feeling baby soft.​
+                Dermatologist-tested.​
+                Clinically Proven Mildness formula, is designed for baby’s delicate skin.​
+                No parabens, phthalates, or dyes.​
+                Effective moisturization for the whole family.
+            </p>
+                
+                <div class="price">
+                    <p >$10.5</p>
+                </div>   
+        </div>
+        
+        <!--BEGIN PRODUCT 03 SECTION-->
+        <section class="product">
+            <img src="./Images/Soap.png" alt="Product 2">
+            
+            <i class="fa-solid fa-cart-shopping fa-beat"></i>
+            <button class="AC">Add to Cart</button>
+        <!--END PRODUCT 03 SECTION-->
+        </section>
+
+
+        <div class="descriptions">
+            <h2>Fairy Baby Soap</h2>
+            <p>
+                Use bath time to gently cleanse your baby’s skin and have it feeling smooth with the baby bar, enriched with moisturizer to keep baby’s skin from drying out. This mild baby soap bar is grippable for easy bathing and gentle enough to use on the entire body, including your baby’s face.
+            </p>
+
+            <div class="price">
+                <p >$7.2</p>
+            </div> 
+        </div>
+       
+        <!--BEGIN PRODUCT 04 SECTION-->
+        <section class="product">
+            <img src="./Images/Cream.png" alt="Product 2">
+            <i class="fa-solid fa-cart-shopping fa-beat"></i>
+            <button class="AC">Add to Cart</button>
+        <!--END PRODUCT 04 SECTION-->
+        </section>
+
+        <div class="descriptions">
+            <h2>Fairy Baby Face Cream</h2>
+               <p>
+                    Our Fairy Baby Face Cream moisturizes skin for 24 hours and is made with NATURALCALM® aromas that help soothe and relax baby before bed. ​
+                    
+                    ​​You can use Fairy Baby Face Cream in the evening as part of our clinically proven Bedtime® routine of warm bath, gentle massage, and quiet time to help your child get a peaceful night's sleep*. When baby sleeps, parents sleep.​
+                    
+                    Hypoallergenic and pH balanced.​
+                    Pediatrician and dermatologist-tested.​
+                    No parabens, phthalates, or dyes.​
+                    Gently moisturizes baby’s delicate skin.​
+                </p>
+                <div class="price">
+                    <p >$9.2</p>
+                    
+                </div> 
+        </div>
+       
+        <!--BEGIN PRODUCT 05 SECTION-->
+        <section class="product">
+            <img src="./Images/Lotion.png" alt="Product 2">
+            <i class="fa-solid fa-cart-shopping fa-beat"></i>
+            <button class="AC">Add to Cart</button>
+        <!--END PRODUCT 05 SECTION-->
+        </section>
+
+        <div class="descriptions">
+            <h2>Fairy Baby Body Lotion</h2>
+            <p>
+                    Formulated to be gentle, never harsh, our Skin Nourish Moisturizing Lotion with Shea & Cocoa Butter Scents gently hydrates dry skin for 24hr moisturization. This nourishing baby lotion helps leave skin feeling smooth and healthy.​
+                    
+                    Safe and effective for the whole family​
+                    With shea & cocoa butter.​
+                    Pediatrician and dermatologist-tested.​
+                    Hypoallergenic; formulated to be gentle, never harsh.​
+                    Clinically Proven Mildness® formula, is designed for baby’s delicate skin.​
+                    No parabens, phthalates or dyes.​
+                    Lightweight texture, non greasy.</p>
+            <div class="price">
+                <p >$12.2</p>
+            </div>
+        </div>
+        
+        <!--BEGIN PRODUCT 06 SECTION-->
+        <section class="product">
+            <img src="./Images/Powderr.png" alt="Product 2">
+            <i class="fa-solid fa-cart-shopping fa-beat"></i>
+            <button class="AC">Add to Cart</button>
+        <!--END PRODUCT 06 SECTION-->
+        </section>
+
+        <div class="descriptions">
+            <h2>Fairy Baby Powder</h2>
+            <p>Soothe your baby’s senses after bath time or while diapering with  Fairy Baby Powder. Our cornstarch baby powder with lavender & chamomile scent is designed to soothe and gently absorb excess moisture on baby’s skin, leaving skin feeling dry, fresh, and smooth. ​​Lavender and chamomile scented.​
+                Dermatologist-tested​
+                Hypoallergenic; formulated to be gentle, never harsh.​
+                Clinically Proven Mildness formula, is designed for baby’s delicate skin.
+            </p>
+            <div class="price">
+                <p >$4.2</p>
+            </div> 
+        </div>
+       
+    <!--MAIN CONTENT-->   
+    </main>
+    <!--BEGIN FOOTER-->
+    <div class="footer">
+        <div class="icons">
+            <i class="fa-brands fa-facebook fa-beat-fade"></i>
+            <i class="fa-brands fa-instagram fa-beat-fade"></i>
+            <i class="fa-brands fa-twitter fa-beat-fade"></i>
+            <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
+     <!--END FOOTER-->
+    </div>
+     <!--END PRODUCTS PAGE BODY-->
+    </body>
+
+
+</html>

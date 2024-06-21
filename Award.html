@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Award</title>
+        <style>
+/*STYLE FOR FULL PAGE*/
+* {
+	margin:0;
+	padding:0;
+	}
+
+/*STYLE FOR AWARDPAGE BODY*/	
+.Awardbody{
+    background-color: #b2ffff;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% ;
+	margin-top:0px;
+	
+	 }		
+/*STYLE FOR HEADER */	
+.header{
+        position:fixed;
+        margin-top: -150px;
+        width:100%;
+        height: 150px;
+        background-image: url("./Images/b12.webp");
+        display: block;
+        z-index: 10;
+       }
+                
+ /*STYLE FOR LOGO */	
+.logopicc{
+        background-color:#b2ffff;
+        height:100px;
+        width:100px;
+        margin-left:20px;
+        border-radius:70px;
+        margin-top:-80px;
+
+    }
+
+.logopic{
+        height:100px;
+        width:100px;
+        display:inline-block;
+         }
+
+         
+/*STYLE FOR NAVIGATION BUTTON*/
+.navbutton{
+	       
+        display:inline-block;
+        width:400px;
+        height:40px;
+        margin-left:1000px;
+        margin-top:50px;
+        margin-bottom:5px;
+		 
+          }
+          
+.nbtn{
+        margin-right:2px;
+        padding:5px;
+        width:70px;
+        border-radius:30px;
+        position:relative;
+        text-align:center;
+        font-family:poppins;
+        font-weight:800;
+        color:#008080;
+        cursor:pointer;
+        transition:0.5s;
+	 }
+ /*STYLE FOR BUTTON HOVER*/	 	 
+.nbtn:hover{
+        background-color: #008080;
+        color:#000;
+        box-shadow:0 0 50px #008080,0 0 21px 0 #008080;
+    }
+
+ /*STYLE FOR CONTENT*/ 
+.content{
+    background-image: url("Images/R3.jpg");
+    z-index: 11;
+    margin-top: 140px;
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    position: sticky;    
+    }
+
+ /*STYLE FOR IMAGE */ 
+.content img{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/*STYLE FOR TEXT */ 
+.txt{
+    text-align: center;
+    padding-top: 200px;}
+
+/*STYLE FOR DESCRIPTION*/ 
+.Description{
+    width: 1000px;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 80px;
+    line-height: 2.4;
+    font-size:20px;
+    }
+
+/*STYLE FOR ICONS*/ 
+.icons{
+    margin-left:600px;
+    padding:20px;
+    }
+
+.icons .fa-brands{
+    padding:20px;
+    }
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+			body {
+				font-size: 14px;
+			}
+			/* Additional responsive styles for smaller screens */
+		}
+
+		/* Media query for screens with a minimum width of 1200px */
+		@media (min-width: 1200px) {
+			body {
+				font-size: 18px;
+			}
+			/* Additional responsive styles for larger screens */
+		}
+
+        </style>
+    </head>
+    <!--BEGIN AWARDPAGE BODY-->
+    <body class = "Awardbody">
+        <!--BEGIN HEADER-->
+        <div class="header">
+        <!--BEGIN NAVIGATION BUTTON-->
+        <div class = "navbutton">
+             <a  href = "./00048.html"><button class = "nbtn" id = "Home"> Home</button></a>
+             <a href = "./Products.html"><button class = "nbtn" id = "Products"> Products</button></a>
+             <a href = "./Toys.html"><button class = "nbtn" id = "Toys"> Toys</button></a>
+             <a href = "./About.html"><button  class = "nbtn" id = "About"> About Us</button></a>
+             <a href = "./Award.html"><button  class = "nbtn" id = "Award"> Awards</button></a>
+        <!--END NAVIGATION BUTTON-->
+        </div>
+        <!--BEGIN LOGO-->
+        <div class="logopicc">
+        <img class="logopic" src="./Images/logo.png">
+        <!--END LOGO-->
+        </div>
+        <!--END HEADER-->
+        </div>
+
+        <!--BEGIN CONTENT -->
+         <div class="content">
+        
+            <div class="txt">
+                <h1>
+                    AWARDS & CERTIFICATIONS
+                <h1>
+                <p>Fairy Baby Product private Limited</p>
+           </div>
+         <!--END CONTENT--> 
+         </div>
+
+         <!--BEGIN DESCRIPTION -->
+         <div class="Description">
+            <p>From its inception, Fairy Baby Product private Limited aspired to create the finest, most unique baby products manufacturing facility in Sri Lanka.
+            </p>
+
+            <p>Today we still remain the most advanced, ultra-hygienic, eco-friendly and sought-after baby products manufacturer, our quality standards even surpassing European GMP requirements
+            </p>
+
+            <p>The company has won many accolades for its facilities and initiatives, and was also the first baby products manufacturer in Sri Lanka to receive international GMP, ISO 9001 and ISO 14001 certification
+            </p>
+         <!--END DESCRIPTION -->
+         </div>
+
+         <!--BEGIN FOOTER -->
+         <div class="footer">
+            <div class="icons">
+                <i class="fa-brands fa-facebook fa-beat-fade"></i>
+                <i class="fa-brands fa-instagram fa-beat-fade"></i>
+                <i class="fa-brands fa-twitter fa-beat-fade"></i>
+                <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
+              <!--END FOOTER-->   
+           </div>
+          
+     <!--END AWARDPAGE BODY--> 
+    </body>
+</html> 
